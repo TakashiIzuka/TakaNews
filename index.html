@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAKANEWS - Puluhan Ojol Surabaya Keluhkan Motor Brebet</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #f3f6fb;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header img {
+      height: 55px;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      color: #1a73e8;
+      font-weight: 700;
+    }
+
+    header h1 span {
+      color: #ff9800;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: #2196f3;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: white;
+      color: #2196f3;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    /* MAIN ARTICLE */
+    .main-article {
+      text-align: center;
+      padding: 40px 10%;
+      background: white;
+      margin: 30px auto;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .main-article h2 {
+      color: #1a73e8;
+      margin-bottom: 10px;
+    }
+
+    .main-article p.date {
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .main-article img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+
+    .main-article img:hover {
+      transform: scale(1.03);
+    }
+
+    .main-article p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-top: 15px;
+    }
+
+    /* POPULAR NEWS SECTION */
+    .popular-section {
+      background: #ffffff;
+      margin: 40px auto;
+      padding: 40px 8%;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .popular-section h3 {
+      text-align: center;
+      color: #1a73e8;
+      margin-bottom: 30px;
+      font-size: 1.8em;
+    }
+
+    .popular-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .popular-item {
+      background: #f9fbff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .popular-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .popular-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .popular-item h4 {
+      padding: 15px;
+      margin: 0;
+      font-size: 1.05em;
+      color: #333;
+      text-align: center;
+    }
+
+    .popular-item h4:hover {
+      color: #1a73e8;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #2196f3;
+      color: white;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+
+    .footer-id {
+      margin-top: 10px;
+      font-size: 0.9em;
+      line-height: 1.6;
+      color: #e3f2fd;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+      }
+
+      header img {
+        height: 50px;
+      }
+
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      .main-article {
+        padding: 25px 6%;
+      }
+
+      .popular-section {
+        padding: 25px 6%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      nav a {
+        width: 90%;
+        text-align: center;
+      }
+
+      .main-article img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Takanews">
+    <h1>TAKA<span>NEWS</span></h1>
+  </header>
+
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#">NEWS</a>
+    <a href="#">HOT NEWS</a>
+    <a href="#">UPDATE</a>
+    <a href="#">PEMERINTAH</a>
+    <a href="#">EDUKASI</a>
+  </nav>
+
+  <main class="main-article">
+    <h2>Puluhan Ojol Surabaya Keluhkan Motor Brebet dan Mogok Usai Isi Pertalite</h2>
+    <p class="date">Izuka - <span style="color:#ff9800;">Takanews</span><br>Kamis, 30 Oktober 2025</p>
+
+    <img src="judul.jpeg" alt="Ilustrasi ojol isi bensin">
+
+    <p>
+        Wakil Wali kota Surabaya Armuji melakukan inspeksi mendadak (sidak) ke SPBU Pertamina atas banyaknya laporan driver ojek online (ojol).
+        Kendaraan mereka brebet dan mogok setelah pengisian BBM.
+    </p>
+
+    <p>
+      Perwakilan ojol dan taksi online Surabaya, Daniel Lukas Rorong menjelaskan sudah ada sekitar 25 laporan ojol yang diterimanya sejak Sabtu (25/10/2025).
+      Para driver ojol tersebut mengeluhkan motornya brebet dan mogok usai melakukan pengisian BBM Pertalite di sejumlah SPBU di Surabaya. <br> <br>
+      ”Saya menerima pengaduan dari teman-teman setelah mengisi BBM Pertalite, ternyata mereka mengalami masalah di mana motornya brebet dan mogok,” kata Daniel saat melapor ke Rumah Aspiras Armuji, Kamis (30/10/2025). <br> <br>
+      ”Lokasinya beda-beda pak, ada yang di Jalan Tapak Siring, Rajawali, Rungkut, jadi beda,” imbuhnya.
+    </p>
+
+    <p>
+     Ketika diperiksakan ke bengkel, diketahui bahwa busi motor yang awalnya berwarna putih berubah menjadi kuning.
+     Selain itu, saat dilakukan tap atau pengurasan tangki bensin terdapat dua zat cairan yang terpisah dengan warna berbeda yaitu cairan berwarna hijau yang merupakan Pertalite dan cairan berwarna putih yang tidak diketahui. <br> <br>
+     ”Dan kasusnya semua teman-teman yang melapor ini sama, businya jadi menguning dan begitu ditap ada dua zat cair yang berbeda di dalam tangkinya itu,” terangnya.
+    </p>
+
+    <p>
+        Ia menuturkan, hal tersebut tentu sangat merugikan para ojol karena biaya pengurasan memakan ongkos sekitar Rp 100.000.<br> <br>
+        ”Bagi mereka itu uang besar karena sehari paling dapatnya sekitar Rp 150.000,” tuturnya. <br> <br>
+        Menurutnya, sidak untuk pengecekan kualitas BBM pada Rabu (29/10/2025) tersebut hanya dilakukan di SPBU yang bukan merupakan lokasi titik pengaduan.<br> <br>
+        ”Nah, sidak SPBU yang diakukan kemarin itu ternyata yang saya enggak menerima pengaduan sama sekali,” ujarnya.
+    </p>
+    <p>
+        Menanggapi laporan tersebut, pria yang akrab disapa Cak Ji itu pun langsung mendatangi SPBU Pertamina di Jalan Rajawali, Kecamatan Krembangan, Surabaya, Jawa Timur. <br> <br>
+        Sesampainya di sana, Cak Ji pun mendapati adanya campuran dua zat cair yang berbeda di dalam BBM Pertalite.
+        Supervisor SPBU Pertamina Rajawali, Budi Susetyo berkomitmen akan menyampaikan keluhan tersebut kepada kantor pusat PT Pertamina. <br><br>
+        ”Iya nanti kita masukkan laporannya, saya ajukan ke kantor (pusat) Pertamina,” kata Budi saat ditemui Cak Ji. <br> <br>
+        Ia juga menerangkan bahwa setiap laporan harus memiliki nota pembelian sebagai bukti aduan.
+        ”Mekanisme laporan pasti kita terima, tapi pada dasarnya nanti kita minta nota pembeliannya,” tuturnya. <br> <br>
+        Cak Ji pun menegaskan bahwa setidaknya harus ada ganti rugi berupa pengembalian uang kepada para driver ojol atas biaya perbaikan di bengkel. <br>
+        ”Para ojol ini kalau nge-service pasti habis uang, dari Pertamina digantikan enggak uangnya, jangan disampaikan saja harus ada kepastian,” tegas Cak Ji. <br> <br>
+        ”Orang kalau laporan enggak mungkin dibuat-buat karena mereka juga pasti (pendapatan) gojeknya juga berkurang, gak bisa narik penumpang, masa uang Rp 100.000 aja enggak diganti,” lanjutnya.
+    </p>
+    <p>
+        Ia mengimbau kepada seluruh masyarakat, baik ojol maupun pengguna roda dua untuk selalu meminta nota pembayaran setiap melakukan pengisian. <br> <br>
+        ”Ini kan kebijakannya Pertamina artinya kita mengimbau bagi mereka yang roda dua sata mengisi bensin Pertalite harus selalu minta struk bon,” imbaunya. <br> <br>
+        Jadi, pengguna BBM Pertalite dapat langsung mengajukan komplain kepada SPBU pengisian terakhir dengan menunjukkan bukti nota pembelian tersebut.
+    </p>
+    <p>
+        ”Sewaktu-waktu kalau motor bermasalah mereka bisa langsung ajukan komplain ke pengisian SPBU terakhir,” ucapnya. <br> <br>
+        Ia juga berkomiten akan terus menindaklanjuti setiap laporan warga setiap permasalahan terkait motor mogok akibat pengisian BBM Pertalite di Surabaya. <br> <br>
+        ”Makanya kita kan menerima lapoiran warga, kalau pengisiannya di Rungkut ya kita sidak ke Rungkut, kalau (pengisiannya) di Jalan Ponorogo ya sidak ke Ponorogo. Kejadian seperti itulah yang harus kita tindak lanjuti,” tutupnya.
+
+    </p>
+  </main>
+
+  <!-- BERITA POPULER -->
+  <section class="popular-section">
+    <h3>Berita Populer</h3>
+    <div class="popular-list">
+      <div class="popular-item">
+        <img src="goblin.jpg" alt="Foto goblin tambang di gugat">
+        <h4>Digugat karena Kelangkaan BBM di SPBU Swasta, Bahlil Buka Suara</h4>
+      </div>
+      <div class="popular-item">
+        <img src="vivo.jpeg" alt="Vivo gak jadi beli bbm di pertamina">
+        <h4>Gara-gara Etanol, Vivo dan BP-AKR Batal Beli BBM Base Fuel Pertamina</h4>
+      </div>
+      <div class="popular-item">
+        <img src="wus.jpg" alt="wush">
+        <h4>Danantara Tanggapi Penolakan Utang Kereta Whoosh Dibayar APBN</h4>
+      </div>
+      <div class="popular-item">
+        <img src="bensin.jpeg" alt="bensin Etanol njir">
+        <h4>Pertamina Pastikan Tak Ada Campuran Air dalam Pertalite</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 TAKANEWS - All Rights Reserved
+    <div class="footer-id">
+      Nama: Naf'an Falakil Ahyar<br>
+      Kelas: XI RPL 5<br>
+      Absen: 30 <br>
+      Sumber: https://surabaya.kompas.com/read/2025/10/30/193520778/puluhan-ojol-surabaya-keluhkan-motor-brebet-dan-mogok-usai-isi-pertalite?page=all
+    </div>
+  </footer>
+</body>
+</html>
